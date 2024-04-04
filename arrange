@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# set the root directory as a "files"
+cd files
+
+# loop for all files in the files "directory"
+for file in *
+do
+  # extract the first letter of the file name
+  first_letter=$(echo $file | cut -c 1 | tr '[:upper:]' '[:lower:]')
+
+  # move the file
+  mv $file ../$first_letter/
+done
