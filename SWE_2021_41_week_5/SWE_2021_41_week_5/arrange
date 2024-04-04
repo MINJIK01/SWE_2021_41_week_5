@@ -3,7 +3,7 @@
 # set the root directory as a "files"
 cd files
 
-# files 디렉토리 안에 있는 모든 파일에 대해 반복합니다.
+# loop for all files in the files "directory"
 for file in *
 do
   # extract the first letter of the file name
